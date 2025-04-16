@@ -3,8 +3,6 @@ import Image from "./Image";
 import Socket from "./Socket";
 import Notification from "./Notification";
 import { currentUser } from "@clerk/nextjs/server";
-import Logout from "./Logout";
-import { prisma } from "@/prisma";
 import UserProfileSection from "./UserProfileSection";
 
 const menuList = [

@@ -260,7 +260,6 @@ export const updateUserProfile = async (formData: FormData) => {
     // Upload images if provided
     let imgPath = undefined;
     let coverPath = undefined;
-    let clerkAvatarUrl = undefined;
 
     if (avatar && avatar.size > 0) {
       // Upload to ImageKit for our database
