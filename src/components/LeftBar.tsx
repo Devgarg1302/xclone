@@ -70,7 +70,7 @@ const menuList = [
 
 // This remains a server component
 const LeftBar = async () => {
-  let user = await currentUser();
+  const user = await currentUser();
 
   return (
     <div className="h-screen sticky top-0 flex flex-col justify-between pt-2 pb-8">
