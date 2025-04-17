@@ -76,6 +76,20 @@ const SignInPage = () => {
             </SignIn.Action>
           </SignIn.Step>
           <SignIn.Step name="verifications">
+            <SignIn.Strategy name="email_code">
+              <h1>Check your email</h1>
+              <p>
+                We sent a code to <SignIn.SafeIdentifier />.
+              </p>
+
+              <Clerk.Field name="code" className="flex flex-col gap-2">
+                <Clerk.Label>Email code</Clerk.Label>
+                <Clerk.Input className="py-2 px-6 rounded-full text-black w-72 placeholder:text-sm" />
+                <Clerk.FieldError className="text-red-300 text-sm" />
+              </Clerk.Field>
+
+              <SignIn.Action submit className="mt-2 text-sm underline w-72 text-center text-iconBlue">Continue</SignIn.Action>
+            </SignIn.Strategy>
             <SignIn.Strategy name="password">
               <Clerk.Field name="password" className="flex flex-col gap-2">
                 <Clerk.Input

@@ -19,7 +19,6 @@ const Share = () => {
     sensitive: false,
   });
 
-  const router = useRouter();
   const { user } = useUser();
 
   const [userData, setUserData] = useState<{
